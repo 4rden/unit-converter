@@ -32,19 +32,83 @@ body {
     flex-direction: column;
     justify-content: start;
     align-items: center;
+    gap: 32px;
 }
 
 #bottom-container { 
     width: 100%;
     flex: 1;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
 }
 
 #title-container { 
     margin-top: 32px;
     font-size: 28px;
     color:white;
+    display: flex; 
+    flex-direction: row;
+}
+
+#input-container { 
+    display: flex; 
+    justify-content:center;
+    align-items: end;
+    gap: 8px;
+    color: white;
+    border-bottom: white solid 2px;
 }
 
 .trace { 
     border: blue dashed 1px;
+}
+
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;  
+    appearance: none;      
+    background: none;
+    box-shadow: none;
+    border: none;
+    width:80px; 
+    height: 64px;
+    font-size: 2em;
+    text-align: end;
+    color: white;
+
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input::placeholder {
+  color: white;     
+  font-size: 2em;
+  opacity: .2;  
+}
+
+select { 
+    appearance: none;      
+    background: none;
+    box-shadow: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 16px;
+}
+
+#number-input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+#select-container select:focus {
+  outline: none;
+  box-shadow: none;
 }
