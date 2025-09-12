@@ -7,6 +7,32 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
+    <div id="main"> 
+        <div>
+            <h1>Unit Converter</h1>
+        </div>
+        <div id="content-container">
+            <div id="input-container">
+                <select id="unit-1" name="unit">
+                    <option value="g">Grams</option>
+                    <option value="kg">Kilograms</option>
+                    <option value="lb">Pounds</option>
+                    <option value="oz">Ounces</option>
+                </select>
+            <input type="text" id="input-1" inputmode="numeric" pattern="[0-9]*">
+            </div>
+            <h2> to </h2>
+             <div id="input-container">
+                <select id="unit-2" name="unit">
+                    <option value="g">Grams</option>
+                    <option value="kg">Kilograms</option>
+                    <option value="lb">Pounds</option>
+                    <option value="oz">Ounces</option>
+                </select>
+                <input type="text" id="input-2" inputmode="numeric" pattern="[0-9]*">
+            </div>
+        </div>
+    </div>   
 <script src="script.js"></script>    
 </body>
 </html>
